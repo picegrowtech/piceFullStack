@@ -1,0 +1,118 @@
+.banner_bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 494px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner_content h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.banner_content h2 span {
+  color: #109126;
+}
+
+.banner_content ul li {
+  background-repeat: no-repeat;
+  background-position: left 2px;
+  padding-left: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.banner_content .btn {
+  display: inline-block;
+  padding: 12px 32px;
+  font-size: 17px;
+  background-color: #109126;
+  color: #fff;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.banner_content .btn:hover,
+.banner_content .btn:focus {
+  background-color: #109126;
+}
+
+/*Responsive*/
+@media (min-width: 1200px) and (max-width: 1366px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner_bg {
+    height: auto;
+    padding: 30px 0px;
+  }
+  .banner_content h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .banner_content ul li {
+    background-size: 28px;
+    font-size: 15px;
+    padding: 3px 0px 5px 45px;
+    margin-bottom: 18px;
+  }
+  .banner_content .btn {
+    font-size: 14px;
+    padding: 10px 22px;
+    margin-left: 40px;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner_bg {
+    height: auto;
+    padding: 30px 0px;
+  }
+  .banner_content h2 {
+    font-size: 21px;
+    margin-bottom: 15px;
+  }
+  .banner_content ul li {
+    background-size: 20px;
+    font-size: 14px;
+    padding: 0px 0px 0px 35px;
+    margin-bottom: 15px;
+  }
+  .banner_content .btn {
+    font-size: 12px;
+    padding: 9px 18px;
+    margin-left: 30px;
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner_bg {
+    height: auto;
+    padding: 20px 0px;
+  }
+  .banner_content h2 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  .banner_content ul li {
+    background-size: 15px;
+    font-size: 12px;
+    padding: 0px 0px 0px 28px;
+    margin-bottom: 12px;
+  }
+  .banner_content .btn {
+    font-size: 11px;
+    padding: 8px 18px;
+    margin-left: 25px;
+    margin-top: 5px;
+  }
+}

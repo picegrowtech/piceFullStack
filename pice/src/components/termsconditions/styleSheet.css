@@ -1,0 +1,20 @@
+.termsConditionsBg {
+	padding: 50px 0px;
+}
+@media (min-width: 1200px) and (max-width: 1366px) { 
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) { 
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+
+}
+
+@media only screen and (max-width: 767px) {
+.termsConditionsBg { font-size: 12px; padding: 30px 0px; }
+.termsConditionsBg h2 { font-size: 20px; }
+.termsConditionsBg h5 { font-size: 15px; }
+}

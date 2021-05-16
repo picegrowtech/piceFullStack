@@ -1,0 +1,136 @@
+.support_confs_bg {
+	background-color: #fafafa;
+	padding:50px 0px;
+}
+
+.support_confs_cnt {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	flex-direction: column;
+}
+
+.support_confs_bg h3 {
+	font-weight: 500;
+	font-size: 30px;
+	color: #1b2638;
+	margin-bottom: 30px;
+}
+
+.support_confs_slider {
+	display: flex;
+	width: 730px;
+	justify-content: space-between;
+}
+
+.support_confs_slider .slick-list {
+	margin: 0px 35px;
+}
+.support_confs_slider .slick-track > div.slick-slide {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #1b2638;
+	font-size: 13px;
+}
+.support_confs_slider .slick-track > div.slick-slide > div > div { text-align: center;  }
+.support_confs_slider .slick-track > div p {
+	margin:0px;
+}
+
+.support_confs_slider .slick-track > div img {
+	margin-bottom: 20px;
+}
+
+.support_confs_slider .slick-track > div h5 {
+	margin-bottom: 5px;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.support_confs_slider .slickPrv {
+    left: 0px;
+    width: 33px;
+    height: 61px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -61px;
+    cursor: pointer;
+    background-color: #fafafa;
+}
+
+.support_confs_slider .slickNxt {
+    right: 0px;
+    width: 33px;
+    height: 61px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -61px;
+    cursor: pointer;
+    background-color: #fafafa;
+}
+
+/*Responsive*/
+@media (min-width: 1200px) and (max-width: 1366px) { 
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) { 
+.support_confs_bg { padding: 30px 0px;  }
+.support_confs_bg h3 { font-size:24px; margin-bottom:20px;  }
+.support_confs_slider .slick-track > div.slick-slide { font-size: 13px; }
+.support_confs_slider .slick-track > div.slick-slide h5 { font-size: 16px; margin-bottom: 3px; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.support_confs_bg { padding: 30px 0px;  }
+.support_confs_bg h3 { font-size:21px; margin-bottom:20px;  }
+.support_confs_slider .slick-track > div.slick-slide img { margin:0px auto 10px auto; max-width:70%; }
+.support_confs_slider { width:550px; }
+.support_confs_slider .slick-track > div.slick-slide { font-size: 12px; }
+.support_confs_slider .slick-track > div.slick-slide h5 { font-size: 15px; margin-bottom: 3px; }
+.support_confs_slider .slickPrv {
+    width: 33px;
+    height: 37px;
+    margin-top: -37px;
+    background-size: 20px;
+}
+.support_confs_slider .slickNxt {
+    width: 33px;
+    height: 37px;
+    margin-top: -37px;
+    background-size: 20px;
+}
+}
+
+@media only screen and (max-width: 767px) {
+.support_confs_bg { padding: 25px 0px;  }
+.support_confs_slider { width: 100%; margin: 0px 20px;  }
+.support_confs_slider .slick-list { margin: 0px; }
+.support_confs_bg h3 { font-size:18px; margin-bottom:15px;  }
+.support_confs_slider .slick-track > div.slick-slide img {  margin:0px auto 6px auto; max-width:60%; }
+.support_confs_slider .slick-track > div.slick-slide { font-size: 10px; }
+.support_confs_slider .slick-track > div.slick-slide h5 { font-size: 13px; margin-bottom: 3px; }
+.support_confs_slider .slickPrv {
+    width: 33px;
+    height: 37px;
+    margin-top: -37px;
+    background-size: 20px;
+}
+.support_confs_slider .slickNxt {
+    width: 33px;
+    height: 37px;
+    margin-top: -37px;
+    background-size: 20px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+.support_confs_slider {  max-width: 260px; }
+}

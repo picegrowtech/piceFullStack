@@ -1,0 +1,129 @@
+.csra_features_bg {
+  background-color: #fff;
+  padding: 50px 0px;
+  padding-bottom: 60px;
+  display: flex;
+  width: 100%;
+}
+.csra_features_bg .row {
+  display: flex;
+  flex-direction: column;
+}
+.csra_features_bg h3 {
+  font-weight: 500;
+  font-size: 30px;
+  color: #1b2638;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.csra_features_bg h3 span {
+  color: #109126;
+  margin-right: 7px;
+}
+.csra_features_cnt {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.csra_features_cnt .features_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px 25px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #595959;
+  width: 25%;
+}
+
+.csra_features_cnt .features_box img {
+  margin-bottom: 15px;
+}
+
+/*Responsive*/
+@media (min-width: 1200px) and (max-width: 1366px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .csra_features_bg {
+    padding: 40px 0px;
+  }
+  .csra_features_bg h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .csra_features_cnt .features_box {
+    font-size: 13px;
+    line-height: 22px;
+    padding: 0px 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .csra_features_bg {
+    padding: 30px 0px;
+  }
+  .csra_features_bg h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .csra_features_cnt {
+    align-items: flex-start;
+  }
+  .csra_features_cnt .features_box {
+    font-size: 11px;
+    line-height: 19px;
+    padding: 0px 15px;
+  }
+  .csra_features_cnt .features_box img {
+    max-width: 50px;
+    height: 50px;
+  }
+  .csra_features_cnt .features_box .btn {
+    padding: 7px 14px;
+    font-size: 12px;
+  }
+  .csra_features_cnt .features_box p {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .csra_features_bg {
+    padding: 25px 0px;
+  }
+  .csra_features_cnt {
+    flex-direction: column;
+  }
+  .csra_features_bg h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .csra_features_cnt .features_box {
+    font-size: 11px;
+    width: auto;
+    max-width: 210px;
+    margin: 0px auto 20px auto;
+    line-height: 19px;
+    padding: 0px 15px;
+  }
+  .csra_features_cnt .features_box img {
+    max-width: 50px;
+    margin-bottom: 5px;
+  }
+  .csra_features_cnt .features_box:last-child {
+    margin-bottom: 0px;
+  }
+  .csra_features_cnt .features_box p {
+    margin-bottom: 10px;
+  }
+  .csra_features_cnt .features_box .btn {
+    padding: 7px 14px;
+    font-size: 10px;
+    margin-top: 0px;
+  }
+}

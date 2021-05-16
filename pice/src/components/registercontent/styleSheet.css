@@ -1,0 +1,341 @@
+.RgstrPage {
+  height: 100%;
+  background-size: cover;
+  background-position: right center;
+}
+.RgstrPage header {
+  background-color: transparent;
+}
+.RgstrPage header .logo {
+  margin-bottom: 0px;
+}
+.RgstrPage footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #757575;
+  margin-top: 17px;
+}
+.RgstrPage footer .footer ul li a {
+  color: #757575;
+}
+.RgstrPage footer .footer ul li a:hover,
+.RgstrPage footer .footer ul li a:focus {
+  color: #109126;
+}
+.registerBg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100% - 169px);
+}
+.RgstrBxbg {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 45px 40px;
+  border-radius: 10px;
+  max-width: 485px;
+  margin: auto;
+}
+.RgstrBxbg h3 {
+  font-size: 21px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.RgstrBxbg h3 span {
+  color: #109126;
+}
+.RgstrBxbg p {
+  color: #b7b6b6;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+.RgstrBxbg p a {
+  color: #fff;
+}
+.RgstrBxbg p a:hover,
+.RgstrBxbg p a:focus {
+  color: #109126;
+}
+.registerForm .form-group {
+  margin-bottom: 15px;
+}
+.registerForm .form-group .hidden_txtbox {
+  margin-top: 15px;
+}
+.registerForm .form-control {
+  background-color: #333333;
+  margin-bottom: 0px;
+  height: 45px;
+  padding: 0px 20px;
+  color: #8c8c8c;
+  border-radius: 5px;
+  outline: none !important;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 18px;
+}
+.registerForm .form-group.date {
+  background-color: #333333;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 18px;
+}
+.registerForm .form-group.date .react-datepicker-wrapper {
+  width: 100%;
+  border-radius: 5px;
+}
+.registerForm .form-group.date .react-datepicker-wrapper input {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  height: 45px;
+  padding: 0px 20px;
+  color: #8c8c8c;
+  border-radius: 5px;
+  width: 100%;
+}
+.registerForm .form-group.date .react-datepicker-wrapper input:hover,
+.registerForm .form-group.date .react-datepicker-wrapper input:focus {
+  outline: none;
+}
+.registerForm .form-control::-webkit-input-placeholder {
+  color: #8c8c8c;
+}
+.registerForm .form-control::-moz-placeholder {
+  color: #8c8c8c;
+}
+.registerForm .form-control:-ms-input-placeholder {
+  color: #8c8c8c;
+}
+.registerForm .form-control:-moz-placeholder {
+  color: #8c8c8c;
+}
+
+select.form-control:not([size]):not([multiple]) {
+  height: 45px;
+}
+.registerForm .form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-size: 12px;
+}
+.registerForm .form-group .form-check {
+  display: flex;
+  padding-left: 0px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.registerForm .form-group .form-check a {
+  color: #fff;
+}
+.registerForm .form-group .form-check a:hover,
+.registerForm .form-group .form-check a:focus {
+  color: #109126;
+}
+.chkBcxLabl {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  color: #8c8c8c;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.chkBcxLabl input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #ebebeb;
+  border-radius: 50%;
+}
+
+.chkBcxLabl:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.chkBcxLabl input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.chkBcxLabl input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.chkBcxLabl .checkmark:after {
+  left: 4px;
+  top: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #109126;
+}
+
+.registerForm .form-control:hover,
+.registerForm .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn-submit {
+  font-size: 14px;
+  background-color: #109126;
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 60px;
+}
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: ;
+}
+.frgtPwd {
+  font-size: 13px;
+  color: #b7b6b6;
+  font-weight: 600;
+}
+.frgtPwd:hover,
+.frgtPwd:focus {
+  color: #109126;
+}
+
+@media (min-width: 1200px) and (max-width: 1366px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .loginpPage {
+    height: auto;
+  }
+  .loginpPage footer {
+    margin-top: 0px;
+  }
+  .RgstrBxbg {
+    margin: 30px auto;
+    padding: 30px 30px;
+    max-width: 400px;
+  }
+  .RgstrBxbg h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .loginForm .form-group {
+    margin-bottom: 18px;
+  }
+  .loginForm .form-control {
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .loginpPage {
+    height: auto;
+  }
+  .loginpPage footer {
+    margin-top: 0px;
+  }
+  .RgstrBxbg {
+    margin: 30px auto;
+    padding: 30px 30px;
+    max-width: 400px;
+  }
+  .RgstrBxbg h3 {
+    font-size: 22px;
+    margin-bottom: 22px;
+  }
+  .loginForm .form-group {
+    margin-bottom: 18px;
+  }
+  .loginForm .form-control {
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .RgstrPage {
+    height: auto;
+  }
+  .RgstrPage footer {
+    margin-top: 0px;
+  }
+  .RgstrPage .navbar {
+    display: none;
+  }
+  .registerBg {
+    align-items: flex-start;
+  }
+  .RgstrBxbg {
+    margin: 30px auto;
+    padding: 25px 15px;
+    max-width: 100%;
+  }
+  .RgstrBxbg h3 {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .loginForm .form-group {
+    margin-bottom: 14px;
+  }
+  .loginForm .form-control {
+    height: 42px;
+    font-size: 12px;
+    background-size: 15px;
+  }
+  .registerForm .form-group.date {
+    background-size: 15px;
+  }
+  .registerForm .form-group.date .react-datepicker-wrapper input {
+    height: 42px;
+    font-size: 12px;
+  }
+  .btn-submit {
+    font-size: 13px;
+    padding: 10px 30px;
+  }
+  .frgtPwd {
+    font-size: 12px;
+  }
+  .RgstrBxbg p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .RgstrPage {
+    height: auto;
+  }
+  .registerBg {
+    align-items: center;
+  }
+  .loginBxbg {
+    margin: 30px auto;
+  }
+  .RgstrPage footer {
+    position: inherit;
+    width: 100%;
+  }
+}

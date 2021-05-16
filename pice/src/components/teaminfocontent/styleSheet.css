@@ -1,0 +1,193 @@
+.btnBg {
+  display: flex;
+  padding-top: 30px;
+}
+.btnBg .btn {
+  padding: 9px 15px 9px 35px;
+  margin-right: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #109126;
+  background-repeat: no-repeat;
+  background-position: 10% 12px;
+  background-size: 16px;
+  border-radius: 7px;
+}
+.btnBg .btn.remove {
+  background-position: 12% 10px;
+  background-size: 12px;
+}
+.btnBg .btn:hover,
+.btnBg .btn:focus {
+  background-color: ;
+}
+.teamList {
+  width: 700px;
+  margin-top: 30px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.teamList table {
+  border: 0px;
+}
+.teamList table tr:nth-child(2) td {
+  padding-top: 25px;
+}
+.teamList table tr th {
+  border-top: 0px;
+  border-bottom: 1px solid #bebebe;
+  font-weight: 600;
+  font-size: 12px;
+  color: #696969;
+  text-align: center;
+}
+.teamList table tr th:first-child {
+  width: 30px;
+}
+.teamList table tr td:first-child {
+  width: 30px;
+}
+.teamList table tr:hover td {
+  background-color: #efefef;
+}
+.teamList table tr td label {
+  margin-bottom: 0px;
+}
+.teamList table tr td input {
+  float: left;
+  margin-top: 1px;
+}
+.teamList table tr td {
+  border: none;
+  font-size: 11px;
+  color: #ababab;
+  text-align: center;
+}
+.ReactModalPortal {
+  border: none;
+}
+.ReactModal__Content {
+  -webkit-box-shadow: 2px 2px 12px 0px rgba(50, 50, 50, 0.52);
+  -moz-box-shadow: 2px 2px 12px 0px rgba(50, 50, 50, 0.52);
+  box-shadow: 2px 2px 12px 0px rgba(50, 50, 50, 0.52);
+}
+.ReactModalPortal h2 {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+.ReactModalPortal .closeBtn {
+  width: 16px;
+  height: 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background-color: transparent;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.modalForm .form-group {
+  margin-bottom: 15px;
+}
+.modalForm .form-group .hidden_txtbox {
+  margin-top: 15px;
+}
+.modalForm .form-control {
+  background-color: #f3f3f3;
+  margin-bottom: 0px;
+  height: 45px;
+  padding: 0px 20px;
+  color: #8c8c8c;
+  border-radius: 5px;
+  outline: none !important;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 18px;
+}
+.modalForm .form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-size: 12px;
+}
+.modalForm .form-control:hover,
+.modalForm .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.modalForm .btn-submit {
+  font-size: 14px;
+  background-color: #109126;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 30px;
+}
+.modalForm .btn-submit:hover,
+.btn-submit:focus {
+  background-color: ;
+}
+.ReactModal__Overlay {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+@media only screen and (min-width: 1200px) {
+  .modalForm {
+    min-width: 500px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1366px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .teamList {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .teamList {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .teamList {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .teamList table {
+    width: 100%;
+  }
+  .btnBg {
+    padding-top: 20px;
+  }
+  .btnBg .btn {
+    font-size: 10px;
+    padding: 9px 12px 9px 30px;
+    margin-right: 10px;
+    background-position: 10% 10px;
+  }
+  .btnBg .btn.remove {
+    background-position: 11% 8px;
+  }
+  .teamList table tr th {
+    font-size: 11px;
+  }
+  .teamList table tr:nth-child(2) td {
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .teamList table {
+    width: 350px;
+  }
+}

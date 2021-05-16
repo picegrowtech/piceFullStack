@@ -1,0 +1,49 @@
+.dashbrdDfltCntBg {
+  display: flex;
+  justify-content: center;
+}
+.dashbrdDfltCnt {
+  padding: 150px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.dashbrdDfltCnt h3 {
+  font-size: 17px;
+  color: #1b2638;
+  font-weight: 400;
+}
+
+.dashbrdDfltCnt .btn {
+  display: inline-block;
+  padding: 10px 40px;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #109126;
+  color: #fff;
+  margin-top: 10px;
+}
+.dashbrdDfltCnt .btn:hover,
+.dashbrdDfltCnt .btn:focus {
+  background-color: #109126;
+}
+@media (min-width: 1200px) and (max-width: 1366px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 767px) {
+  .dashbrdDfltCnt h3 {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .dashbrdDfltCnt .btn {
+    padding: 9px 30px;
+    font-size: 12px;
+    margin-top: 0px;
+  }
+}

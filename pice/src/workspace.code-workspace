@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\mycustomapi_backend"
+		}
+	],
+	"settings": {}
+}

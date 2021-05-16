@@ -1,0 +1,84 @@
+.registerThanksBg {
+  padding: 90px 0px;
+}
+.thanksContent {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  color: #424242;
+  line-height: 30px;
+  font-size: 16px;
+}
+.thanksContent h3 {
+  font-size: 30px;
+  color: #109126;
+}
+.thanksContent img {
+  margin-bottom: 20px;
+  max-width: 120px;
+}
+.thanksContent .btn {
+  display: inline-block;
+  padding: 9px 22px;
+  font-size: 13px;
+  background-color: #109126;
+  color: #fff;
+  margin-top: 5px;
+}
+.thanksContent .btn:hover,
+.thanksContent .btn:focus {
+  background-color: ;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .registerThanksBg {
+    padding: 70px 0px;
+  }
+  .thanksContent h3 {
+    font-size: 25px;
+  }
+  .thanksContent {
+    font-size: 14px;
+    max-width: 470px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .registerThanksBg {
+    padding: 50px 0px;
+  }
+  .thanksContent h3 {
+    font-size: 23px;
+  }
+  .thanksContent img {
+    max-width: 90px;
+    margin-bottom: 15px;
+  }
+  .thanksContent {
+    font-size: 14px;
+    max-width: 470px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .registerThanksBg {
+    padding: 40px 0px;
+  }
+  .thanksContent h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .thanksContent img {
+    max-width: 60px;
+    margin-bottom: 15px;
+  }
+  .thanksContent {
+    font-size: 12px;
+    line-height: 22px;
+    max-width: 470px;
+  }
+  .thanksContent .btn {
+    padding: 9px 18px;
+    font-size: 11px;
+  }
+}

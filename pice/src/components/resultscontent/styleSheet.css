@@ -1,0 +1,50 @@
+.resultCnt {
+  margin-top: 20px;
+}
+
+.resultCnt h3 {
+  color: #1b2638;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.resultCnt .btn {
+  display: inline-block;
+  padding: 9px 18px;
+  font-size: 13px;
+  background-color: #109126;
+  color: #fff;
+}
+.resultCnt .btn:hover,
+.resultCnt .btn:focus {
+  background-color: ;
+}
+
+.resultTable {
+  text-align: center;
+}
+
+.resultTable table tr th {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.resultTable table tr td {
+  font-size: 13px;
+  text-align: left;
+  padding: 8px 20px;
+}
+.resultTable table tr:nth-child(even) td {
+  background-color: #efefef;
+}
+
+@media (min-width: 1200px) and (max-width: 1366px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 767px) {
+}

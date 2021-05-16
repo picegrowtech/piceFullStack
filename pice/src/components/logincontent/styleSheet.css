@@ -1,0 +1,217 @@
+.loginpPage {
+  height: 100%;
+  background-size: cover;
+}
+.loginpPage header {
+  background-color: transparent;
+}
+.loginpPage header .logo {
+  margin-bottom: 0px;
+}
+.loginpPage footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  margin-top: 17px;
+}
+.loginpPage footer .footer ul li a {
+  color: #fff;
+}
+.loginpPage footer .footer ul li a:hover,
+.loginpPage footer .footer ul li a:focus {
+  color: #109126;
+}
+.loginBg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100% - 169px);
+}
+.loginBxbg {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 45px 60px;
+  border-radius: 10px;
+  max-width: 485px;
+  margin: auto;
+}
+.loginBxbg h3 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.loginBxbg p {
+  color: #b7b6b6;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+.loginBxbg p a {
+  color: #fff;
+}
+.loginBxbg p a:hover,
+.loginBxbg p a:focus {
+  color: #109126;
+}
+.loginForm .form-group {
+  margin-bottom: 20px;
+}
+.loginForm .form-control {
+  background-color: #333333;
+  margin-bottom: 0px;
+  height: 50px;
+  padding: 0px 20px;
+  color: #8c8c8c;
+  border-radius: 5px;
+  outline: none !important;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 18px;
+}
+
+.loginForm .form-control:hover,
+.loginForm .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn-submit {
+  font-size: 15px;
+  background-color: #109126;
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 60px;
+}
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: ;
+}
+.frgtPwd {
+  font-size: 13px;
+  color: #b7b6b6;
+  font-weight: 600;
+}
+.frgtPwd:hover,
+.frgtPwd:focus {
+  color: #109126;
+}
+
+@media (min-width: 1200px) and (max-width: 1366px) {
+}
+
+@media only screen and (min-width: 1201px) {
+  .loginBg {
+    min-height: 580px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .loginpPage {
+    height: auto;
+  }
+  .loginpPage footer {
+    margin-top: 0px;
+  }
+  .loginBxbg {
+    margin: 30px auto;
+    padding: 30px 30px;
+    max-width: 400px;
+  }
+  .loginBxbg h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .loginForm .form-group {
+    margin-bottom: 18px;
+  }
+  .loginForm .form-control {
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .loginpPage {
+    height: auto;
+  }
+  .loginpPage footer {
+    margin-top: 0px;
+  }
+  .loginBxbg {
+    margin: 30px auto;
+    padding: 30px 30px;
+    max-width: 400px;
+  }
+  .loginBxbg h3 {
+    font-size: 22px;
+    margin-bottom: 22px;
+  }
+  .loginForm .form-group {
+    margin-bottom: 18px;
+  }
+  .loginForm .form-control {
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .loginpPage {
+    height: auto;
+  }
+  .loginpPage footer {
+    margin-top: 0px;
+  }
+  .loginpPage .navbar {
+    display: none;
+  }
+  .loginBg {
+    align-items: flex-start;
+  }
+  .loginBxbg {
+    margin: 30px auto;
+    padding: 25px 15px;
+    max-width: 100%;
+  }
+  .loginBxbg h3 {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .loginForm .form-group {
+    margin-bottom: 14px;
+  }
+  .loginForm .form-control {
+    height: 42px;
+    font-size: 12px;
+    background-size: 15px;
+  }
+  .btn-submit {
+    font-size: 13px;
+    padding: 10px 30px;
+  }
+  .frgtPwd {
+    font-size: 12px;
+  }
+  .loginBxbg p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .loginpPage {
+    height: 100vh;
+  }
+  .loginBg {
+    align-items: center;
+  }
+  .loginBxbg {
+    margin: 30px auto;
+  }
+  .loginpPage footer {
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+  }
+}

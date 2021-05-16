@@ -1,0 +1,654 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  overflow-x: hidden;
+}
+
+/*code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}*/
+
+ul,
+ol {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.pad-0 {
+  padding: 0px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+a,
+.btn,
+button {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  color: #5a5a5a;
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+  text-decoration: none;
+}
+
+.aboutContentbg {
+  background-color: #fff;
+  padding: 50px 0px;
+}
+.teamContentSection {
+  display: flex;
+  flex-direction: column;
+}
+.teamContentSection h4 {
+  color: #109126;
+  font-weight: 600;
+  font-size: 23px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.teamMemSection {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.teamMemSection:last-child {
+  margin-bottom: 0px;
+}
+.teamMemBox {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+  align-items: center;
+  justify-content: center;
+}
+.teamMemBox:first-child {
+  margin-left: 0px;
+}
+.teamMemBox:last-child {
+  margin-bottom: 0px;
+}
+.teamMemBox img {
+  margin-bottom: 10px;
+  max-width: 100px;
+  opacity: 0.5;
+}
+.teamMemBox h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.teamMemBox h6 {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #b3b3b3;
+}
+.teamMemBox a {
+  font-size: 13px;
+  color: #109126;
+}
+
+.content_section h4,
+.csra_features_bg h3,
+.aboutBg h2,
+.support_confs_bg h3,
+.teamContentSection h4,
+.getStartedContent h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.dashboardCntBg {
+  background-color: #fafafa;
+  height: calc(100vh - 89px);
+}
+.dashbrdRight {
+  padding-left: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 400px;
+}
+.dashboardCntBg .container {
+  max-width: 960px;
+  margin: auto;
+}
+.dashboardCntBg footer {
+  position: absolute;
+  width: 100%;
+  padding: 15px 15px;
+  bottom: 0px;
+  left: 0px;
+}
+.dashboard .header .navbar ul.navbar-nav > li {
+  padding: 0px;
+  margin-left: 30px;
+}
+.searchBg {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0px 20px;
+}
+.searchBg .form-control {
+  color: #1b2638;
+  font-weight: 600;
+  border: none;
+  font-size: 13px;
+  height: 42px;
+  width: 200px;
+}
+.searchBg .form-control:hover,
+.searchBg .form-control:focus {
+  box-shadow: none;
+}
+.searchBg .searchbtn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-size: 20px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.searchBg .searchbtn:hover,
+.searchBg .searchbtn:focus {
+  border: none;
+  outline: none;
+}
+.dashboard .header .navbar ul li .btn img {
+  width: 20px;
+}
+.dashboard .header .navbar ul li .btn.notifications img {
+  width: 18px;
+}
+.dashboard .header .navbar ul li .btn .badge {
+  padding: 0px;
+  top: -8px;
+  right: 8px;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  background-color: #109126;
+  color: #fff;
+  border-radius: 50%;
+}
+.notifications {
+  background-color: transparent;
+  padding: 0px;
+}
+.message {
+  background-color: transparent;
+  padding: 0px;
+}
+.dashboard .header .navbar ul li .btn {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.dashboard .header .navbar ul li .btn:hover,
+.dashboard .header .navbar ul li .btn:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.dashboard .header .navbar {
+  padding: 0px 0px;
+}
+.dashboard .header .navbar .navbar-collapse {
+  height: 100%;
+}
+.dashboard .header .navbar .navbar-collapse .navbar-nav {
+  height: 100%;
+}
+.dashboard .header .navbar ul li.dropdown {
+  margin-left: 20px;
+}
+.dashboard .header .navbar ul li.dropdown .btn {
+  display: flex;
+  height: 100%;
+  border-radius: 0px;
+  align-items: center;
+  font-size: 12px;
+  color: #fff;
+  padding: 0px 30px 0px 20px;
+  background-color: #161e2b;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 89% center;
+}
+.dashboard .header .navbar ul li.dropdown ul.dropdown-menu {
+  background-color: #161e2b;
+  border: none;
+  border-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.dashboard .header .navbar ul li.dropdown ul.dropdown-menu li {
+  padding: 0px;
+}
+.dashboard .header .navbar ul li.dropdown ul.dropdown-menu li .dropdown-item {
+  color: #fff;
+  font-size: 11px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 7px 10px 7px 40px;
+  background-position: 10% center;
+  background-size: 15px;
+  background-repeat: no-repeat;
+}
+
+.dashboard
+  .header
+  .navbar
+  ul
+  li.dropdown
+  ul.dropdown-menu
+  li
+  .dropdown-item:hover,
+.dashboard
+  .header
+  .navbar
+  ul
+  li.dropdown
+  ul.dropdown-menu
+  li
+  .dropdown-item:focus {
+  background-color: #109126;
+  outline: none;
+}
+
+.sidebarIcon {
+  display: none;
+}
+.dashboardCntBg .collapse {
+  display: inherit;
+  position: relative;
+  z-index: 0;
+}
+@media only screen and (min-width: 768px) {
+  .dashboard .header .navbar ul li.dropdown .btn span {
+    background-image: none !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1366px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dashboard .logo {
+    margin-left: 70px;
+  }
+  .dashbrdRight footer {
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 1;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .dashboard .sidebarIcon {
+    position: absolute;
+    padding: 0px;
+    top: 18px;
+    left: 5px;
+  }
+  .sidebarIcon {
+    display: inherit;
+  }
+  .dashboard .sidebarIcon .navbar-toggler {
+    border: none;
+  }
+  .dashboard .sidebarIcon .navbar-toggler:hover,
+  .dashboard .sidebarIcon .navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  .dashboardCntBg .dashbrdRight {
+    padding-left: 0px;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .dashboardCntBg .collapse.show + .dashbrdRight {
+    padding-left: 270px;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+
+  .dashboardCntBg .collapse.show + .dashbrdRight footer {
+    padding-left: 270px;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .dashboardCntBg .collapse {
+    display: inherit !important;
+  }
+  .dashboardCntBg .sidebarBg {
+    left: -250px;
+    z-index: 2;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .dashboardCntBg .collapse.show .sidebarBg {
+    left: 0px;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .dashboardCntBg .footer {
+    padding: 0px;
+  }
+  .teamInfoContent {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .teamContentSection h4 {
+    font-size: 19px;
+  }
+  .dashboard .logo {
+    margin-left: 60px;
+  }
+  .dashbrdRight footer {
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 1;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .dashboard .sidebarIcon {
+    position: absolute;
+    padding: 0px;
+    top: 10px;
+    left: 5px;
+  }
+  .sidebarIcon {
+    display: inherit;
+  }
+  .dashboard .sidebarIcon .navbar-toggler {
+    border: none;
+  }
+  .dashboard .sidebarIcon .navbar-toggler:hover,
+  .dashboard .sidebarIcon .navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  .dashboardCntBg .dashbrdRight {
+    padding-left: 0px;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .dashboardCntBg .collapse.show + .dashbrdRight {
+    padding-left: 270px;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+
+  .dashboardCntBg .collapse.show + .dashbrdRight footer {
+    padding-left: 270px;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .dashboardCntBg .collapse {
+    display: inherit !important;
+  }
+  .dashboardCntBg .sidebarBg {
+    left: -250px;
+    z-index: 2;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .dashboardCntBg .collapse.show .sidebarBg {
+    left: 0px;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .dashboardCntBg .footer {
+    padding: 0px;
+  }
+  .dashboardCntBg .container {
+    max-width: 720px;
+  }
+  .teamInfoContent {
+    width: 100%;
+  }
+  .dashboardCntBg .footerLogos img {
+    max-width: 70px;
+  }
+  .dashboardCntBg footer {
+    font-size: 9px;
+  }
+  .dashboardCntBg .footerC3sr {
+    max-width: 120px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 200px;
+    background-color: #1b2638;
+    font-size: 13px;
+  }
+  .aboutContentbg {
+    padding: 30px 0px;
+  }
+  .teamContentSection h4 {
+    font-size: 16px;
+  }
+  .teamMemSection {
+    flex-direction: column;
+  }
+  .teamMemBox h5 {
+    font-size: 13px;
+  }
+  .teamMemBox h6 {
+    font-size: 11px;
+  }
+  .teamMemBox,
+  .teamMemBox:first-child {
+    margin: 0px auto 10px auto;
+  }
+
+  .dashboard .navbar-expand-md .navbar-toggler {
+    display: none;
+  }
+  .dashboard .navbar-expand-md .collapse.navbar-collapse {
+    display: inherit;
+    position: inherit;
+    background-color: transparent;
+  }
+  .dashboard .navbar-expand-md .collapse.navbar-collapse .navbar-nav {
+    flex-direction: row;
+  }
+  .dashboard .header .navbar ul.navbar-nav > li {
+    margin-left: 15px;
+  }
+  .dashboard
+    .navbar-expand-md
+    .collapse.navbar-collapse
+    .navbar-nav
+    li:first-child {
+    display: none;
+  }
+  .dashboard .header .navbar ul li.dropdown {
+    flex-direction: column;
+  }
+  .dashboard .header .navbar ul li.dropdown .btn span {
+    background-repeat: no-repeat;
+    font-size: 0px;
+    width: 17px;
+    height: 17px;
+    background-size: 18px;
+  }
+  .dashboard .header .navbar ul li.dropdown ul.dropdown-menu {
+    position: absolute;
+    right: 0px;
+    left: inherit;
+  }
+  .dashboard .logo {
+    margin-left: 53px;
+  }
+  .dashbrdRight footer {
+    position: static;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 1;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .dashboard .sidebarIcon {
+    position: absolute;
+    padding: 0px;
+    top: 10px;
+    left: 5px;
+  }
+  .sidebarIcon {
+    display: inherit;
+  }
+  .dashboard .sidebarIcon .navbar-toggler {
+    border: none;
+  }
+  .dashboard .sidebarIcon .navbar-toggler:hover,
+  .dashboard .sidebarIcon .navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  .dashboardCntBg .dashbrdRight {
+    padding-left: 0px;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .dashboardCntBg .collapse {
+    display: inherit !important;
+  }
+  .dashboardCntBg .sidebarBg {
+    left: -250px;
+    z-index: 2;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .dashboardCntBg .collapse.show .sidebarBg {
+    left: 0px;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .dashboardCntBg .footer {
+    padding: 0px;
+  }
+  .dashboard .header .navbar ul li.dropdown ul.dropdown-menu li .dropdown-item {
+    font-size: 10px;
+  }
+  .dashboardCntBg {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .dashboard .logo {
+    margin-left: 34px;
+    max-width: 170px;
+  }
+  .dashboard .header .navbar ul li.dropdown .btn {
+    padding: 0px 25px 0px 10px;
+    background-position: 85% center;
+  }
+  .dashboard .header .navbar ul.navbar-nav > li {
+    margin-left: 5px;
+  }
+  .dashboard .header .navbar ul li.dropdown {
+    margin-left: 0px;
+  }
+  .dashboard .sidebarIcon {
+    top: 10px;
+  }
+  .dashboard .sidebarIcon .navbar-toggler {
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+  }
+  .dashboard .sidebarIcon .navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .dashboard .header .navbar ul li .btn img {
+    width: 15px;
+  }
+  .dashboard .header .navbar ul li .btn.notifications img {
+    width: 13px;
+  }
+  .dashboard .header .navbar ul li .btn .badge {
+    top: -9px;
+    right: 6px;
+    font-size: 8px;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+  }
+  .dashboard .header .navbar ul li.dropdown .btn span {
+    width: 14px;
+    height: 14px;
+    background-size: 14px;
+  }
+}
