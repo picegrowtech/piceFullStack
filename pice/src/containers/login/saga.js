@@ -9,7 +9,7 @@ export function* login({ payload }) {
    */
 
   const response = yield axios({
-    url: "http://localhost:8000/login",
+    url: "https://pice.herokuapp.com/login",
     headers: {
       "Content-Type": "application/json",
     },

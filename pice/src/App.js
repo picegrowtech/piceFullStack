@@ -16,7 +16,7 @@ const history = createBrowserHistory();
 class App extends React.Component {
   state = {}
   componentDidMount() {
-    fetch('http://localhost:5000/displayData')
+    fetch('https://pice.herokuapp.com/displayData')
       .then(res => res.json())
       .then(res => this.setState({ data:JSON.parse(res[0].data) }))
       .then(json => console.log(json))

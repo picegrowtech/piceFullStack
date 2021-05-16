@@ -3,7 +3,7 @@ const Model = (props) => {
     const [id, setId] = useState("60a0f8b46f1d872dec7ddcc3")
     const [updatedContent, setUpdatedContent] = useState(JSON.stringify(props.Content))
     const uploadContent = () => {
-        fetch('http://localhost:5000/updateDisplayData', {
+        fetch('https://pice.herokuapp.com/updateDisplayData', {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({id:id, data:updatedContent})

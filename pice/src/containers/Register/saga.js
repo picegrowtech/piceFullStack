@@ -9,7 +9,7 @@ export function* register ({ payload }) {
   *data in axios receives  email , password 
   */
   const  resOne=yield   axios({
-    url: "http://localhost:8000/register", 
+    url: "https://pice.herokuapp.com/register", 
       headers: {
           'Content-Type': 'application/json'
       },
@@ -25,7 +25,7 @@ export function* register ({ payload }) {
   */
   try{
     const  resTwo= yield  axios({
-     url: "http://localhost:8000/savenewuser",
+     url: "https://pice.herokuapp.com/savenewuser",
      headers: {
          'Content-Type': 'application/json'
      },
