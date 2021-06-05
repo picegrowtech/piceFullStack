@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "jest",
+    "test": " npm install --prefix jest",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix pice && npm run build --prefix pice"
   },
   "keywords": [],
