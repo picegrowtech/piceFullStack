@@ -21,7 +21,6 @@ class HomeScreen extends React.Component {
   render() {
     return (
       <>
-      {console.log(val)}
         <Navbar menu={Menu(this.props.Content.homeMenuOpt)} Content={this.props.Content}/>
         <Model  Content={this.props.Content}/>
         <HomeBanner Content={this.props.Content}/>
