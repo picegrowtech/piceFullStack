@@ -43,13 +43,13 @@ class Dashboard extends React.Component {
           <DashboardSidebar Content={this.props.Content}/>
           <div className="dashbrdRight">
             <Switch>
-              <Route exact path={`${this.props.match.path}`}>
+              <Route exact strict path={`${this.props.match.path}`}>
                 <DashboardDfltCnt
                 Content={this.props.Content}
                   gtStrFrmPath={`${this.props.match.path}/get-started`}
                 />
               </Route>
-              <Route path={`${this.props.match.path}/get-started`}>
+              <Route exact strict path={`${this.props.match.path}/get-started`}>
                 <GetStartedForm
                 Content={this.props.Content}
                   resPath={`${this.props.match.path}/results`}
@@ -58,7 +58,7 @@ class Dashboard extends React.Component {
                   }
                 />
               </Route>
-              <Route path={`${this.props.match.path}/results`}>
+              <Route exact strict path={`${this.props.match.path}/results`}>
                 <ResultsContent Content={this.props.Content}/>
               </Route>
             </Switch>

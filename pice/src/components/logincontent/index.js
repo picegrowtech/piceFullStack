@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ImgUrl from "../../Theme/images.json";
 import "./styleSheet.css";
+import FirebaseAuth from '../FirebaseAuth/index'
 const LoginContent = (props) => {
 	const [email, setEmail] = useState("")
 	const [password, setPass] = useState("")
@@ -10,8 +11,21 @@ const LoginContent = (props) => {
 	return (
 		<div className="loginBg">
 			<div className="container">
-				<div className="loginBxbg">
-					<h3>{props.Content.singInTxt}</h3>
+				<div className="loginBxbg">					
+					<FirebaseAuth Content={props.Content}/>
+				</div>
+			</div>
+		</div>
+	);
+};
+
+
+export default LoginContent;
+
+/*
+This contains UI UX for username , password
+
+<h3>{props.Content.singInTxt}</h3>
 					<form className="loginForm">
 						<div class="form-group">
 							<input onChange={(inp) => setEmail(inp.target.value)} style={{ backgroundImage: `url(${ImgUrl.loginUsrIcn})` }} type="email" class="form-control" id="emailAddress" placeholder={props.Content.emailAddress} />
@@ -25,11 +39,4 @@ const LoginContent = (props) => {
 						</div>
 					</form>
 					<p>{props.Content.newToCSRA}<a href="/signup">{props.Content.signUpNow}</a></p>
-				</div>
-			</div>
-		</div>
-	);
-};
-
-
-export default LoginContent;
+					*/

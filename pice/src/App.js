@@ -1,4 +1,6 @@
 import React from "react";
+import firebase from 'firebase'
+import config from './config'
 import Home from "./containers/homeScreen/index";
 import About from "./containers/AboutUs/index";
 import Login from "./containers/login/index";
@@ -14,13 +16,24 @@ import Content from "./utils/content.json";
 const history = createBrowserHistory();
 
 class App extends React.Component {
-  state = {}
+  state = {adminIsSignedIn:false, superAdminEmail:["picegrow@gmail.com"]}
   componentDidMount() {
     fetch('https://pice.herokuapp.com/displayData')
       .then(res => res.json())
       .then(res => this.setState({ data:JSON.parse(res[0].data) }))
       .then(json => console.log(json))
+
+    if (!firebase.apps.length) firebase.initializeApp(config);
+    else firebase.app(); // if already initialized
+
+    firebase.auth().onAuthStateChanged(user => {
+      const isAdminEmail = [...this.state.superAdminEmail, ...this.state.data?.AdminEmail].includes(user?.email)
+      const isEmailVerified = user?.emailVerified === true
+      this.setState({ adminIsSignedIn: (isAdminEmail && isEmailVerified) });
+    });
   }
+        
+  
   data=()=>{ return this.state.data}
   appPages=()=>{
     return(
@@ -28,19 +41,16 @@ class App extends React.Component {
     <Router history={history}>
       <Switch>
         <Route exact path={this.state.data?.homeMenuOpt[0].link}>
-          <Home Content={this.state.data}/>
+          <Home Content={this.state.data} adminIsSignedIn={this.state.adminIsSignedIn}/>
         </Route>
         <Route exact path={this.state.data?.homeMenuOpt[1].link}>
           <About Content={this.state.data}/>
         </Route>
         <Route exact path={this.state.data?.homeMenuOpt[2].link}>
-          <Login Content={this.state.data}/>
+          <Dashboard Content={this.state.data}/>
         </Route>
         <Route exact path={this.state.data?.homeMenuOpt[3].link}>
-          <Register Content={this.state.data}/>
-        </Route>
-        <Route exact path={this.state.data?.homeMenuOpt[4].link}>
-          <Dashboard Content={this.state.data}/>
+          <Login Content={this.state.data}/>
         </Route>
         <Route exact path="/success">
           <RegisterSuccess Content={this.state.data}/>

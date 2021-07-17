@@ -22,7 +22,7 @@ class HomeScreen extends React.Component {
     return (
       <>
         <Navbar menu={Menu(this.props.Content.homeMenuOpt)} Content={this.props.Content}/>
-        <Model  Content={this.props.Content}/>
+        <Model  Content={this.props.Content}  adminIsSignedIn={this.props.adminIsSignedIn}/>
         <HomeBanner Content={this.props.Content}/>
         <HomeContent  Content={this.props.Content}/>
         <SupportConferences  Content={this.props.Content}/>

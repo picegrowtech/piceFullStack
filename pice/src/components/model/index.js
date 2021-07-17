@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import firebase from 'firebase'
 const Model = (props) => {
     const [id, setId] = useState("60a0f8b46f1d872dec7ddcc3")
     const [updatedContent, setUpdatedContent] = useState(JSON.stringify(props.Content))
@@ -10,7 +11,7 @@ const Model = (props) => {
         }).then(response => console.log(response.json())).then(json => console.log(json))
     }
     return (<>
-        <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bd-example-modal-lg">
+        <button hidden={!props.adminIsSignedIn} type="button" class="btn btn-danger" data-toggle="modal" data-target=".bd-example-modal-lg">
             Edit display data
   </button>
         <div class="modal fade bd-example-modal-lg" id="bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

@@ -6,7 +6,7 @@ import axios from "axios";
 export function* uploadGetStrtFrm({ payload }) {
 
   const uploadFileres = yield axios({
-    url: "https://pice.herokuapp.com/?dofinalassignment=true&coiupdate=false&domain=ComputerArchitecture&customreviewer=true&missingreviewers=false&revconflicts=false&reviewersforced=true&reviewersload=true&nrpp=5&nppr=NotRequired&runcoi=false&conftool=hotcrp",
+    url: "http://localhost:8000/?dofinalassignment=true&coiupdate=false&domain=ComputerArchitecture&customreviewer=true&missingreviewers=false&revconflicts=false&reviewersforced=true&reviewersload=true&nrpp=5&nppr=NotRequired&runcoi=false&conftool=hotcrp",
     headers: {
       'Content-Type': 'application/json'
     },
@@ -19,7 +19,7 @@ export function* uploadGetStrtFrm({ payload }) {
   console.log(" uploadFileres :" + uploadFileres);
 
   const statusRes = yield axios({
-    url: "https://pice.herokuapp.com/status",
+    url: "http://localhost:8000/status",
 
     method: "get",
 
@@ -30,7 +30,7 @@ export function* uploadGetStrtFrm({ payload }) {
   console.log(" statusRes :" + statusRes);
 
   const endRes = yield axios({
-    url: `https://pice.herokuapp.com/send/?user=${payload.userName}`,
+    url: `http://localhost:8000/send/?user=${payload.userName}`,
 
     method: "post",
     validateStatus: function (status) {
